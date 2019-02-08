@@ -106,7 +106,7 @@
 
 		<!-- banner start -->
 		<!-- ================ -->
-		<div id="banner" class="banner">
+		<section id="banner" class="banner">
 			<div class="banner-image"></div>
 			<div class="banner-caption">
 				<div class="container">
@@ -118,12 +118,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- banner end -->
 
 		<!-- section start -->
 		<!-- ================ -->
-		<div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
+		<section class="section clearfix object-non-visible" data-animation-effect="fadeIn">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -132,7 +132,7 @@
 						<div class="space"></div>
 						<div class="row">
 							<div class="col-md-6">
-								<img src="images/moi.jpg" width="720px" height="22px" alt="Adeline Servan">
+								<img class=".rounded-circle" src="../images/moi.jpg" width="720px" height="22px" alt="Adeline Servan">
 								<div class="space"></div>
 							</div>
 							<div class="col-md-6">
@@ -184,18 +184,32 @@
 											</div>
 										</div>
 									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingTree">
+											<h4 class="panel-title">
+												<a class="collapsed"  data-toggle="collapse" data-parent="#accordion" href="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
+													Photoshop
+												</a>
+											</h4>
+										</div>
+										<div id="collapseTree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTree">
+											<div class="panel-body">
+											Je me sers de Photoshop de base pour faire les wireframes, mais ayant adoptés XD. Du coup je débute Photoshop, pour les montages photos. Vous pourrez voir mes créations en plus bas. 
+											</div>
+										</div>
+									</div>
+									<!-- Fin des accordion-->
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- section end -->
 
-		<!-- section start -->
-		<!-- ================ -->
-		<div class="section translucent-bg bg-image-1 fond blue">
+		<!-- section CV -->
+		<section class="section translucent-bg bg-image-1 fond blue">
 			<div class="container object-non-visible" data-animation-effect="fadeIn">
 				<h1 id="services"  class="text-center title">Mon CV</h1>
 				<div class="space"></div>
@@ -266,7 +280,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- section end -->
 
 		<!-- section start -->
@@ -284,7 +298,7 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-		<div class="section">
+		<section class="section">
 			<div class="container">
 				<h1 class="text-center title" id="portfolio">Portfolio</h1>
 				<div class="separator"></div>
@@ -299,21 +313,22 @@
 								<li class="active"><a href="#" data-filter="*">All</a></li>
 								<li><a href="#" data-filter=".web">Web</a></li>
 								<li><a href="#" data-filter=".jeux">Jeux</a></li>
+								<li><a href="#" data-filter=".photoshop">Photoshop</a></li>
 							</ul>
 						</div>
 						<!-- isotope filters end -->
 
 						<!-- portfolio items start -->
 						<div class="isotope-container row grid-space-20">
-							<div class="col-sm-6 col-md-3 isotope-item web">
+							<artilce class="col-sm-6 col-md-3 isotope-item web">
 								<div class="image-box">
 									<div class="overlay-container">
-										<img src="images/projet-1.png" alt="projet accordion">
+										<img src="images/projet-1.png" alt="Ze Quiz">
 										<a class="overlay" data-toggle="modal" data-target="#project-1">
 											<span>Javascript</span>
 										</a>
 									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">Un accordion à la main</a>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1"> Ze Quiz</a>
 								</div>
 								<!-- Modal -->
 								<div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
@@ -321,14 +336,19 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="project-1-label">Projet accordion</h4>
+												<h4 class="modal-title" id="project-1-label">Projet Ze Quiz</h4>
 											</div>
 											<div class="modal-body">
 												<h3>Description</h3>
 												<div class="row">
 													<div class="col-md-6">
-														<p>Le projet a été réalisé avec du HTML, CSS et Javascript.</p>
-														<p>Au clic, le bouton changera de couleur et affichera un texte. Un autre clic sur le même bouton, cachera de nouveau le texte.</p>
+														<p>Le projet a été réalisé avec du HTML, CSS et Javascript/jquery et Firebase.</p>
+
+														<p>Lors de la paricipation à un Hackthon, nous avons eu 8h pour créer un quiz. Le quiz avait un fond musical, des points s'ajoutaient lors de bonne réponse et un son de victoire se lançait. Les points dimunaient quand la réponse était mauvaise et un son jouait.</p>
+
+														<p>Le joueur avait 3 vies, si le chronomètre arrivait à 0 et qu'il n'avait pas répondu, le joueur perdait une vie. S'il répondait mal à ne question, il perdait une vie.</p>
+
+														<p>Dans ce projet, Firebase était utilisé pour se connecter avec facebook. On récupéra la photo de profil, le nom et le prénom de la personne qu'on affichera dans un modal meilleur score avec tous les joueurs qui ont joué.</p>
 													</div>
 													<div class="col-md-6">
 														<img src="images/projet-1.png" alt="projet accordion">
@@ -336,15 +356,16 @@
 												</div>
 											</div>
 											<div class="modal-footer">
-												<button type="button" class="btn btn-sm btn-default d" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-sm btn-default d" data-dismiss="modal">Fermer</button>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!-- Modal end -->
-							</div>
+						</artilce>
 
-							<div class="col-sm-6 col-md-3 isotope-item web">
+
+							<article class="col-sm-6 col-md-3 isotope-item web">
 								<div class="image-box">
 									<div class="overlay-container">
 										<img src="images/projet-2.png" alt="register">
@@ -352,7 +373,7 @@
 											<span>PHP</span>
 										</a>
 									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">Projet Inscription</a>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">Espace membre</a>
 								</div>
 								<!-- Modal -->
 								<div class="modal fade" id="project-2" tabindex="-1" role="dialog" aria-labelledby="project-2-label" aria-hidden="true">
@@ -360,14 +381,15 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="project-2-label">Projet Inscription</h4>
+												<h4 class="modal-title" id="project-2-label">Espace membre</h4>
 											</div>
 											<div class="modal-body">
-												<h3>Projet Inscription</h3>
+												<h3>Espace membre</h3>
 												<div class="row">
 													<div class="col-md-6">
-														<p>Le projet a été réalisé avec du HTML, CSS, PHP et SQL. La possibilité de le faire avec Firebase </p>
-														<p>L'objectif de ce projet était de pouvoir enregistrer des utilisateurs dans une base de donnée. En bloquant de s'inscrire s'il manque une information.</p>
+														<p>Le projet a été réalisé avec du HTML, Bootstrap, PHP et SQL. Un espace membre peut aussi être réalisé avec Firebase.</p>
+														<p>L'objectif de ce projet était d'établir lla validation du formulaire. Puis de pouvoir enregistrer des utilisateurs dans une base de donnée.</p>
+														<p>Ces utilisateurs pourront par la suite se connecter à leur compte, se déconnecter, modifier les informations ou supprimmer leur compte.</p>
 													</div>
 													<div class="col-md-6">
 														<img src="images/projet-2.png" alt="Projet Inscription">
@@ -375,15 +397,15 @@
 												</div>
 											</div>
 											<div class="modal-footer">
-												<button type="button" class="btn btn-sm btn-default d" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-sm btn-default d" data-dismiss="modal">Fermer</button>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!-- Modal end -->
-							</div>
+							</article>
 							
-							<div class="col-sm-6 col-md-3 isotope-item jeux">
+							<article class="col-sm-6 col-md-3 isotope-item jeux">
 								<div class="image-box">
 									<div class="overlay-container">
 										<img src="images/projet-3.png" alt="visual novel">
@@ -415,18 +437,57 @@
 												</div>
 											</div>
 											<div class="modal-footer">
-												<button type="button" class="btn btn-sm btn-default d" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-sm btn-default d" data-dismiss="modal">Fermer</button>
 											</div>
 										</div>
 									</div>
 								</div>
 								<!-- Modal end -->
-							</div>	
+							</article>	
+							<article class="col-sm-6 col-md-3 isotope-item photoshop">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/projet-4.png" alt="Photoshop">
+										<a class="overlay" data-toggle="modal" data-target="#project-4">
+											<span>Photoshop</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-4">Projet Photoshop</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-4" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-4-label">Photoshop</h4>
+											</div>
+											<div class="modal-body text-center">
+												<h3>Photoshop</h3>
+												<div class="row">
+													<div class="col-md-6">
+														<p>Montage photo de superposition, d'une photo de nature type galaxie et forêt et un homme.</p>
+														<p>Tous les images utilisaient sont issus de banque d'image gratuite libre pouvante être modifié et utilisé afin commerciale ou non.</p>
+													</div>
+													<div class="col-md-6">
+														<img src="images/projet-4.png" alt="Photoshop">
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer text-center">
+												<button type="button" class="btn btn-sm btn-default d" data-dismiss="modal">Fermer</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</article>	
 						<!-- portfolio items end -->
 					</div>
 				</div>
 			</div>
 		</div>
+	</section>
 		<!-- section end -->
 
 		<!-- footer start -->
@@ -492,7 +553,6 @@
 				</div>
 			</div>
 			<!-- .subfooter end -->
-
 		</footer>
 		<!-- footer end -->
 
